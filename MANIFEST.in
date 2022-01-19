@@ -1,0 +1,3 @@
+graft quote/static
+graft quote/templates
+global-exclude *.pyc
