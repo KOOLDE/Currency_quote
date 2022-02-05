@@ -4,6 +4,15 @@
     {{ super() }}
 {% endblock %}
 {% block content %}
-    <h1>Index Quote</h1>
-    <p>{{ user }}</p>
+    <section class="box-content">
+        <div class="title-content">
+            <h1>Conversor de moedas <strong class="dollar-content">$</strong></h1>
+        </div>
+        <div class="usd-brl-content">
+            <h3>USD-BRL</h3>
+        </div>
+        <div>
+            <p>{{ data }}</p>
+        </div>
+    </section>
 {% endblock %}
