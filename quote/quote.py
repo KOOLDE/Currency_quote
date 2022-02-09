@@ -7,5 +7,5 @@ bp = Blueprint('quote', __name__)
 
 @bp.route('/')
 def index():
-    API_data = api_quote.data_formated
-    return render_template('quote/index.html', data=API_data)
+    datas = api_quote.data
+    return render_template('quote/index.html', data=datas)

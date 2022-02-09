@@ -4,15 +4,39 @@
     {{ super() }}
 {% endblock %}
 {% block content %}
-    <section class="box-content">
+    <section class="header-box-content">
         <div class="title-content">
             <h1>Conversor de moedas <strong class="dollar-content">$</strong></h1>
         </div>
         <div class="usd-brl-content">
-            <h3>USD-BRL</h3>
-        </div>
-        <div>
-            <p>{{ data }}</p>
+            <h3>{{ data["USDBRL"]["code"] }} - {{ data["USDBRL"]["codein"] }}</h3>
         </div>
     </section>
+    <main class="main-box-content">
+        <form class="form-quote">
+            <div>
+                <input type="text" id="usd" name="usd-field" value="1">
+                <label for="usd">{{ data['USDBRL']['code'] }}</label>
+            </div>
+            <br>
+            <div>
+                <input type="text" id="brl" name="brl-field" value="{{ data['USDBRL']['bid'] }}">
+                <label for="brl">{{ data['USDBRL']['codein'] }}</label>
+            </div>
+        </form>
+    </main>
+    <article class="article-box-content">
+        <h3>Informações</h3>
+        <div>
+            <p>Nome - {{ data['USDBRL']['name'] }}</p>
+            <p>Máximo - {{ data['USDBRL']['high'] }} & Mínimo - {{ data['USDBRL']['low'] }}</p>
+            <p>Variação - {{ data['USDBRL']['varBid'] }} & Porcentagem de Variação - {{ data['USDBRL']['pctChange'] }}</p>
+            <p>Compra - {{ data['USDBRL']['bid'] }} & Venda - {{ data['USDBRL']['ask'] }}</p>
+        </div>
+    </article>
+    <footer class="footer-box-content">
+        <div>
+            <p>Copyright © 2011-2022 by Donizete</p>
+        </div>
+    </footer>
 {% endblock %}
