@@ -58,9 +58,10 @@ input:focus + label {
 .article-box-content {
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 380px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 .article-box-content > h3 {
     margin-top: 33px;

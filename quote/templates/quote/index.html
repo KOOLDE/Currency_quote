@@ -28,10 +28,10 @@
     <article class="article-box-content">
         <h3>Informações</h3>
         <div>
-            <p>Nome - {{ data['USDBRL']['name'] }}</p>
-            <p>Máximo - {{ data['USDBRL']['high'] }} & Mínimo - {{ data['USDBRL']['low'] }}</p>
-            <p>Variação - {{ data['USDBRL']['varBid'] }} & Porcentagem de Variação - {{ data['USDBRL']['pctChange'] }}</p>
-            <p>Compra - {{ data['USDBRL']['bid'] }} & Venda - {{ data['USDBRL']['ask'] }}</p>
+            <p>{{ data['USDBRL']['name'] }}</p>
+            <p>Máximo {{ data['USDBRL']['high'] }} | Mínimo {{ data['USDBRL']['low'] }}</p>
+            <p>Variação  {{ data['USDBRL']['varBid'] }} | Porcentagem de Variação {{ data['USDBRL']['pctChange'] }}</p>
+            <p>Compra {{ data['USDBRL']['bid'] }} | Venda {{ data['USDBRL']['ask'] }}</p>
         </div>
     </article>
     <footer class="footer-box-content">
